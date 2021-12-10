@@ -1,0 +1,742 @@
+body{
+  background-color: rgb(51, 51, 51);
+}
+/*_____ HEADER ___*/
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .nav-item a {
+    text-decoration: inherit;
+    color: white;
+  }
+  
+  #navbarNav ul :hover {
+    color: #000000;
+  }
+  
+  .navbar-center {
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 991px) {
+    .navbar-center {
+      position: inherit;
+      left: inherit;
+      -webkit-transform: inherit;
+              transform: inherit;
+    }
+  }
+  
+  
+  @media all and (min-width: 200px) and (max-width: 991px) {
+    .d-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%;
+      padding-left: 2rem;
+    }
+  }
+  
+  /*_____ INDEX __*/
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#363131)), url(./img/portada.png);
+    background-image: linear-gradient(to bottom, transparent, #363131), url(./img/portada.png);
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .banner nav {
+    background-color: black;
+    opacity: 90%;
+    font-family: "roboto" sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .banner img {
+    margin-right: 12rem;
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .banner img {
+      margin-right: 0%;
+    }
+  }
+  
+  .banner h1, .banner h2 {
+    font-family: 'roboto', sans-serif;
+    text-align: revert;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    margin-top: 14rem;
+    margin-left: 5rem;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  .banner h2 {
+    margin-top: 0px;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .banner h2 {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      margin-left: 5.5rem;
+    }
+  }
+  
+
+  .colorLetra{
+    color: white;
+  } 
+
+  .card {
+    -webkit-box-shadow: 10px 10px 5px;
+            box-shadow: 10px 10px 5px;
+            background-color: whitesmoke;
+            text-align: center;
+  }
+  
+  .carousel-inner {
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 2rem;
+  }
+  
+  .carousel-inner img {
+    width: auto;
+    height: auto;
+  }
+  
+  .seccion2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;   
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .seccion2 a {
+      font-size: auto;
+    }
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .seccion2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .seccion2 img {
+      padding: 0.5rem;
+    }
+    .seccion2 .card {
+      margin: 5px;
+    }
+    .seccion2 .card .btn {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .seccion2 .btn:hover {
+    background-color: white;
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .seccion2 img {
+      padding: 0.5rem;
+    }
+  }
+  
+  .cardsets {
+    -webkit-box-shadow: 10px 10px 5px;
+            box-shadow: 10px 10px 5px;
+  }
+
+  
+  div.c-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /*_____ SETS ____*/
+
+  .bannersets {
+    background-image: url(./img/setsPortada.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 70vh;
+  }
+  
+  .bannersets nav {
+    background-color: black;
+    opacity: 90%;
+    font-family: "roboto" sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .bannersets img {
+    margin-right: 12rem;
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .bannersets img {
+      margin-right: 0%;
+    }
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    background-color: #ffffff;
+    font-size: xx-large;
+    padding: 0.8rem;
+    font-weight: bold;
+    color: black;
+   
+  }
+
+
+  .cardsets {
+    -webkit-box-shadow: 10px 10px 5px;
+            box-shadow: 10px 10px 5px;
+            background-color: black;
+  }
+
+  .sets a{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 8rem;
+    list-style: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    outline-color: transparent; 
+    outline-style: none;
+
+}
+  
+  /*_____ FECHAS _____*/
+  
+
+  .bannerFechas {
+    background-image: url(./img/fechasPortada.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 70vh;
+  }
+  
+  .bannerFechas nav {
+    background-color: black;
+    opacity: 90%;
+    font-family: "roboto" sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .bannerFechas img {
+    margin-right: 12rem;
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .bannerFechas img {
+      margin-right: 0%;
+    }
+  }
+  
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "boxes fechas2"
+   "boxes fechas2";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    padding-bottom: 3rem;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  #grilla img {
+    margin-bottom: 1rem;
+  }
+  
+  #grilla h3 {
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  #grilla .btn:hover {
+    background-color: gray;
+    color: black;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    #grilla {
+      display: block;
+    }
+    #grilla img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    #grilla img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  .primerTitulo {
+    margin-top: 0rem !important;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .primerTitulo {
+      margin-top: 1.5rem !important;
+    }
+  }
+  
+  .descripcion {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .descripcion {
+      margin: 2rem;
+    }
+  }
+  
+  .boxes {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: boxes;
+    padding-left: 2rem;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  
+  .boxes .badge {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .boxes {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: auto;
+    }
+  }
+  
+  .fechas2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: fechas2;
+    padding-right: 2rem;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .fechas2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: auto;
+    }
+  }
+  
+  .boxes, .fechas2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /*_____ Fotos y Videos ____*/
+  .bannerFyv {
+    background-image: url(./img/photoVideoPortada.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 70vh;
+  }
+  
+  .bannerFyv nav {
+    background-color: black;
+    opacity: 90%;
+    font-family: "roboto" sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .bannerFyv img {
+    margin-right: 12rem;
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .bannerFyv img {
+      margin-right: 0%;
+    }
+  }
+  
+  video{
+    width: 300px ;
+    height: 300px;
+  }
+
+
+  .imagenes, .video {
+    width: 30rem;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            flex-wrap: wrap;
+    margin: 7vw;
+  }
+  
+  .imagenes img, .video img {
+    padding: 1rem;
+  }
+  
+  .imagenes h2, .video h2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0px;
+  }
+  
+  .imagenes .btn:hover, .video .btn:hover {
+    background-color: white;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .imagenes, .video {
+      width: 20rem;
+      display: block;
+      margin: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 1300px) {
+    .imagenes, .video {
+      width: 40rem;
+      display: block;
+      margin: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  /*_____ CONTACTO ______*/
+  .bannerContacto {
+    background-image: url(./img/contactoPortada.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+  }
+  
+  .bannerContacto nav {
+    background-color: black;
+    opacity: 90%;
+    font-family: "roboto" sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .bannerContacto img {
+    margin-right: 12rem;
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .bannerContacto img {
+      margin-right: 0%;
+    }
+  }
+  
+  .descripcion {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .descripcion {
+      margin: 2rem;
+    }
+  }
+  
+  .formulario {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 5vw;
+    text-align:-webkit-center
+    
+  }
+  
+  .formulario button:hover {
+    background-color: #EFEAE2;
+    color: black;
+  }
+
+  h5{
+    color: black;
+  }
+  
+  /*_____ FOOTER ___*/
+  .grilla2 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "lista1 lista2 lista3"
+   "lista1 lista2 lista3";
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .grilla2 {
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .grilla2 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .grilla2 h5 {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .grilla2 h5 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .lista1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: lista1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    text-align: left;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  .lista1 a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .lista1 li {
+    list-style: none;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .lista1 ul {
+      padding: 0rem;
+      text-align: center;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .lista1 {
+      margin: 0.5rem;
+    }
+  }
+  
+  .lista2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: lista2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    font-family: 'roboto', sans-serif;
+    text-align: left;
+  }
+  
+  .lista2 p {
+    margin: 0px;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .lista2 {
+      text-align: center;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .lista2 {
+      margin: 0.5rem;
+    }
+  }
+  
+  .lista3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: lista3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  .lista3 .suscribirme {
+    text-align: center;
+  }
+  
+  .lista3 .iconos {
+    text-align: center;
+  }
+  
+  .lista3 h5 {
+    text-align: center;
+  }
+  
+  .lista3 a {
+    color: inherit;
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+  
+  .lista3 input {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  
+  .lista3 button, .lista3 input {
+    display: inline-block;
+    margin: auto;
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .lista3 {
+      margin: 0.5rem;
+    }
+    .lista3 h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  .lista1Titulo, .lista2Titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .lista1Titulo {
+    margin-left: 2rem;
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .lista1Titulo {
+      margin: 0rem;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .lista1Titulo {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .lista2Titulo {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media all and (min-width: 601px) and (max-width: 800px) {
+    .lista2Titulo {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media all and (min-width: 200px) and (max-width: 600px) {
+    .lista3Titulo {
+      margin-top: 1rem;
+    }
+  }
+  
+  .suscribirme button {
+    margin: 5px;
+  }
+  
+  .suscribirme button:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  .modal-header h6 {
+    color: black;
+  }
+  
